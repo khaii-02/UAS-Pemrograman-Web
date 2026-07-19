@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Detail — Jenna Ortega</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="project-detail">
+
+<header class="site">
+  <div class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark">R</span>RANI KH.</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="project.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary"><span>Let's Talk</span> &rarr;</a>
+      <button class="burger" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow" id="detail-eyebrow">Website Design</span>
+    <h1 id="detail-title">Project Title</h1>
+    <p style="max-width:560px;margin-top:16px;" id="detail-summary"></p>
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <a href="project.html">Projects</a> <span>/</span> <span class="accent" id="detail-crumb">Detail</span></div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="detail-hero-img" id="detail-hero-img">
+      <img id="detail-hero-photo" src="" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+    </div>
+
+    <div class="detail-body" id="detail-body"></div>
+
+    <div class="prev-next">
+      <a class="pn-link" id="prev-link" href="#">
+        <span class="btn-arrow" style="transform:scaleX(-1);">&rarr;</span>
+        <span>Previous<br><strong id="prev-title" style="color:var(--ink);"></strong></span>
+      </a>
+      <a class="pn-link" id="next-link" href="#" style="text-align:right;flex-direction:row-reverse;">
+        <span class="btn-arrow">&rarr;</span>
+        <span>Next<br><strong id="next-title" style="color:var(--ink);"></strong></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© 2026 Rani Khairunnida. All rights reserved.</span>
+      <span>Designed with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>renderProjectDetail();</script>
+</body>
+</html>

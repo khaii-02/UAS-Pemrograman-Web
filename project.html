@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Jenna Ortega</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark">R</span>RANI KH.</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="project.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary"><span>Let's Talk</span> &rarr;</a>
+      <button class="burger" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">My Work</span>
+    <h1>Recent <span class="accent">Projects</span></h1>
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span class="accent">Projects</span></div>
+  </div>
+</section>
+
+<section style="padding-top:10px;">
+  <div class="wrap">
+    <p style="max-width:520px;margin-bottom:36px;">A selection of product and web design work. Tap any card to see the full case study — client, role, and what shipped.</p>
+    <div class="project-grid" id="all-project-grid"></div>
+    <div class="dots" id="project-dots"></div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© 2026 Rani Khairunnida. All rights reserved.</span>
+      <span>Designed with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  renderProjectGrid('all-project-grid', 1, 3);
+  setupProjectPager('all-project-grid', 'project-dots', 3);
+</script>
+</body>
+</html>
